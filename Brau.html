@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. B.R. Ambedkar University, Etcherla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #002147, #00509e);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 10px 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #002147;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00509e;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914') no-repeat center center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 26px;
+      color: #002147;
+    }
+
+    .about, .courses, .contact {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: #f9fbff;
+      padding: 20px;
+      border-left: 5px solid #00509e;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact form {
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .contact button {
+      background: #00509e;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact button:hover {
+      background: #002147;
+    }
+
+    footer {
+      background: #002147;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dr. B.R. Ambedkar University</h1>
+    <p>Etcherla, Andhra Pradesh</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h2>Empowering Education for a Better Future</h2>
+    <p>Dr. B.R. Ambedkar University, Etcherla is committed to academic excellence, innovation, and student success.</p>
+  </div>
+
+  <section id="about">
+    <div class="about">
+      <h2 class="section-title">About the University</h2>
+      <p>
+        Dr. B.R. Ambedkar University, located in Etcherla, is a prestigious institution dedicated to higher education and research.
+        The university offers a wide range of undergraduate and postgraduate programs aimed at developing skilled professionals and responsible citizens.
+      </p>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="courses">
+      <h2 class="section-title">Popular Courses</h2>
+      <div class="courses-grid">
+        <div class="course-card">
+          <h3>B.Sc</h3>
+          <p>Undergraduate science programs with practical and research focus.</p>
+        </div>
+        <div class="course-card">
+          <h3>M.Sc</h3>
+          <p>Advanced postgraduate studies in various science disciplines.</p>
+        </div>
+        <div class="course-card">
+          <h3>B.A / M.A</h3>
+          <p>Arts and humanities programs promoting critical thinking.</p>
+        </div>
+        <div class="course-card">
+          <h3>MBA</h3>
+          <p>Professional management education for future leaders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Dr. B.R. Ambedkar University, Etcherla | All Rights Reserved
+  </footer>
+
+</body>
+</html>
